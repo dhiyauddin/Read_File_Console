@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>ReadFileConsole</display-name>
+	<welcome-file-list>
+		<welcome-file>ReadFileConsole.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<display-name>Servlet Name</display-name>
+		<servlet-name>myservlet</servlet-name>
+		<servlet-class>com.quatriz.controller.Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>myservlet</servlet-name>
+		<url-pattern>/myservlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<display-name>Servlet Name</display-name>
+		<servlet-name>displayRecord</servlet-name>
+		<servlet-class>com.quatriz.controller.Servlet2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>displayRecord</servlet-name>
+		<url-pattern>/displayRecord</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<display-name>Servlet Name</display-name>
+		<servlet-name>uploadFile</servlet-name>
+		<servlet-class>com.quatriz.controller.Servlet3</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>uploadFile</servlet-name>
+		<url-pattern>/uploadFile</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<display-name>Servlet Name</display-name>
+		<servlet-name>ocrPDF</servlet-name>
+		<servlet-class>com.quatriz.controller.Servlet4</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ocrPDF</servlet-name>
+		<url-pattern>/ocrPDF</url-pattern>
+	</servlet-mapping>
+</web-app>
